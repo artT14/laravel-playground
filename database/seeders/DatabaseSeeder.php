@@ -36,5 +36,7 @@ class DatabaseSeeder extends Seeder
             'website'=> 'https://www.acme.com',
             'description'=> 'Ullamco pariatur et consequat irure. Occaecat voluptate et consectetur anim. Cillum irure ullamco laboris cupidatat cupidatat veniam anim magna cupidatat officia pariatur labore elit. Culpa ut eu consectetur irure occaecat velit qui consectetur ex voluptate. Fugiat cupidatat ipsum enim laborum minim nostrud minim officia proident incididunt ullamco laboris. Quis dolore anim elit velit ex magna sint laborum qui minim et non.',
         ]);
+        \App\Models\Listing::factory(10)->create();
+
     }
 }
