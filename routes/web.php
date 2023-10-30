@@ -26,3 +26,12 @@ Route::get('/listings/create' , [ListingController::class,'create']);
 
 // Single listings
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
+// Edit listing
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+
+// Delete listing
+Route::delete('/listings/{listing}', [ListingController::class, 'destroy']);
+
+// Update listing
+Route::put('/listings/{listing}', [ListingController::class,'update']);
